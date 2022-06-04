@@ -1,0 +1,103 @@
+.cover {
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(210, 219, 210, 0.167),
+      rgba(8, 70, 5, 0.294)
+    ),
+    url(../../images/cover\ page\ two.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bigBox {
+  height: 100vh;
+}
+.mainBox {
+  height: 93vh;
+  border-radius: 3rem;
+  background-color: #f2f2f235;
+  box-shadow: 0 4px 8px 0 rgba(8, 52, 183, 0.783),
+    0 6px 20px 0 rgba(13, 41, 201, 0.833);
+}
+.subBoxs {
+  background-color: rgba(255, 255, 255, 0.423);
+  box-shadow: 0 4px 8px 0 rgba(14, 8, 183, 0.539),
+    0 6px 20px 0 rgba(13, 201, 163, 0.433);
+  border-radius: 2rem;
+  height: 41vh;
+  width: 48%;
+  transition: all 1s ease-in-out, outline 0.2s;
+}
+.subBoxs:hover {
+  transform: scale(1.1);
+  outline: 4px solid blue;
+}
+img {
+  width: 5rem;
+  height: 5rem;
+}
+.content {
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.images img {
+  margin: 4px;
+  border-radius: 1rem;
+  border: 2px solid rgb(9, 255, 0);
+  box-shadow: 0 4px 8px 0 rgba(8, 160, 183, 0.623),
+    0 6px 20px 0 rgba(13, 16, 201, 0.59);
+}
+.content .btnGroup {
+  border: 2px solid rgb(11, 134, 6);
+  background-color: white;
+  color: rgb(11, 134, 6);
+  font-weight: bold;
+  padding: 0.5rem 10rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+}
+.content .btnGroup:hover {
+  background-color: rgb(11, 134, 6);
+  color: white;
+}
+@media (max-width: 992px) {
+  .content .btnGroup {
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+  }
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 1192px) {
+  .content .btnGroup {
+    padding: 0.5rem 5rem;
+    border-radius: 0.5rem;
+  }
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .subBoxs {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .subBoxs:hover {
+    transform: none;
+  }
+  .mainBox {
+    height: fit-content;
+  }
+}

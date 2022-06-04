@@ -1,0 +1,169 @@
+.cover {
+  padding-bottom: 5rem;
+  background-image: linear-gradient(
+      0deg,
+      rgba(210, 219, 210, 0.167),
+      rgba(8, 70, 5, 0.294)
+    ),
+    url(../../images/thirdCover.jpg);
+  background-position: center;
+  background-size: cover;
+}
+img {
+  width: 95px;
+  height: 95px;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+.controlBar {
+  padding: 0 1rem 0 0;
+}
+.controlBar h2,
+.timer {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+.controlBar .timer {
+  font-size: 1.5rem;
+}
+.controlBar button {
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(3, 151, 184, 0.783),
+    0 10px 20px 0 rgba(47, 21, 139, 0.833);
+}
+.boardCont {
+  height: 80vh;
+}
+.sudokuBoard {
+  width: 908px;
+  height: 908px;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+
+  border: 4px solid rgb(0, 106, 255);
+  box-shadow: 0 4px 8px 0 rgba(8, 183, 37, 0.783),
+    0 6px 20px 0 rgba(35, 201, 13, 0.833);
+  display: none;
+  border-radius: 2rem;
+}
+.sudokuBoardEasy {
+  width: 400px;
+  height: 400px;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  border: 8px solid rgb(0, 106, 255);
+  box-shadow: 0 4px 8px 0 rgba(8, 183, 37, 0.783),
+    0 6px 20px 0 rgba(35, 201, 13, 0.833);
+  display: none;
+  border-radius: 2rem;
+}
+.hardlevel,
+.easyLevel {
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  text-align: center;
+}
+.sudokuBoard div:focus {
+  outline: 5px solid rgb(0, 0, 0);
+}
+.easyLevel div:focus-visible {
+  outline: 5px solid rgb(0, 0, 0);
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(8, 52, 183, 0.783),
+    0 6px 20px 0 rgba(13, 41, 201, 0.833);
+  padding: 2rem 0;
+}
+.images img {
+  display: block;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(0, 123, 255);
+}
+.images label {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: rgb(2, 2, 33);
+  width: 20px;
+}
+
+.horizontalLine {
+  border-bottom: 4px solid rgb(0, 123, 255);
+}
+.verticalLine {
+  border-right: 4px solid rgb(0, 123, 255);
+}
+.error {
+  background-color: rgba(255, 8, 8, 0.918);
+}
+.succes {
+  outline: 5px solid rgb(44, 246, 4);
+}
+.modal-header h5 {
+  font-size: 2rem;
+}
+.errorNumber {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: rgb(221, 27, 27);
+  font-weight: bolder;
+}
+@media (max-width:775px) {
+
+  .sudokuBoard {
+  width: 458px;
+  height: 458px;
+  margin: 5rem auto;
+  border: 4px solid rgb(0, 106, 255);
+  display: none;
+  border-radius: 2rem;
+}
+
+.hardlevel {
+  width: 50px;
+  height: 50px;
+  border: 2px solid gray;
+  border-radius: 1rem;
+  text-align: center;
+
+}
+.sudokuBoard img {
+  width: 45px;
+  height: 45px;
+}
+}
+@media (max-width:470px) {
+
+  .sudokuBoard {
+  width: 364px;
+  height: 364px;
+  margin: 5rem auto;
+  border: 2px solid rgb(0, 106, 255);
+  display: none;
+  border-radius: 2rem;
+}
+
+.hardlevel {
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  text-align: center;
+
+}
+.sudokuBoard img {
+  width: 35px;
+  height: 35px;
+}
+}

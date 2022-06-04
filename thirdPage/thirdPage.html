@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style3.css" />
+    <title>SUDOKU GAME</title>
+  </head>
+  <body   >
+    <div class="cover">
+      <div class="container">
+        <div class="row p-0">
+          <div class="col">
+            <div class="controlBar row mt-5">
+              <h2 class="col"></h2>
+              <p class="timer text-center col"></p>
+              <button class="col btn btn-outline-danger w-25">Start</button>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 mt-5">
+          <div class="col">
+            <div class="images"></div>
+          </div>
+          <div class="row">
+          <div class="col text-center mt-5">
+            <p class="errorNumber">Error :<span>0</span></p>
+          </div>
+        </div>
+          <div class="row col-12">
+            <div class="col board">
+              <div class="sudokuBoard mx-auto"></div>
+              <div class="sudokuBoardEasy mx-auto"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <div
+              class="modal "
+              id="exampleModal"
+            
+              data-bs-keyboard="false"
+              data-bs-backdrop="static"
+            >
+              <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center w-100" id="exampleModalLabel ">
+                      ENJOY
+                    </h>
+                  </div>
+                  <div class="modal-body"> </div>
+                  <div class="modal-footer d-flex justify-content-evenly">
+                    <button
+                      type="button"
+                      class="btn btn-danger home"
+                      >
+                    
+                      HOME
+                    </button>
+                    <button type="button" class="btn btn-primary replay">
+                      REPlAY
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
