@@ -55,7 +55,7 @@ window.addEventListener('load', function () {
 
   //go home page
   homeBtn.addEventListener('click', () => {
-    window.location.href = '../firstPage/firstPage.html';
+    window.location.href = '../index.html';
   });
 
   //replay again
