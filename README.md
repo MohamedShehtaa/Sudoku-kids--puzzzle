@@ -46,3 +46,5 @@ I use API to generate the puzzle intial value and to solve the Puzzle
    [9*9 puzzle API LINK]('https://sudoku-api.deta.dev/?type=9)
 
 #### _SO HAVE FUN_ .........
+
+[click here to play]( https://mohamedshehtaa.github.io/Sudoku-kids--puzzzle/)
