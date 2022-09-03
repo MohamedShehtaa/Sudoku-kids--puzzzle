@@ -47,4 +47,4 @@ I use API to generate the puzzle intial value and to solve the Puzzle
 
 #### _SO HAVE FUN_ .........
 
-[click here to play]( https://mohamedshehtaa.github.io/Sudoku-kids--puzzzle/)
+[click here to play.]( https://mohamedshehtaa.github.io/Sudoku-kids--puzzzle/)
